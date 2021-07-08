@@ -104,7 +104,7 @@ gem "unf"
 group :development do
   gem 'brakeman', require: false
   gem 'annotate'
-  gem "letter_opener"
+  gem "letter_opener", ">= 1.4.1"
   gem 'quiet_assets'
   gem 'rack-mini-profiler', require: false
 end
@@ -121,7 +121,7 @@ group :development, :test do
   gem 'rubocop',          '0.28.0', require: false
 
   gem 'capybara',            '~> 2.4.0'
-  gem 'capybara-screenshot', '~> 1.0.0'
+  gem 'capybara-screenshot', '~> 1.0.11'
   gem 'poltergeist',         '~> 1.6.0'
 
   gem 'spring',                '~> 1.3.6'
