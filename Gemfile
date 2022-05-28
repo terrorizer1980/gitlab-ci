@@ -8,14 +8,14 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem 'rails', '4.1.12'
+gem 'rails', '5.0.0'
 gem 'activerecord-deprecated_finders'
-gem 'activerecord-session_store'
+gem 'activerecord-session_store', '>= 1.0.0'
 gem "nested_form"
 
 # Specify a sprockets version due to security issue
 # See https://groups.google.com/forum/#!topic/rubyonrails-security/doAVp0YaTqY
-gem 'sprockets', '~> 2.12.3'
+gem 'sprockets', '~> 3.3.5'
 
 # tag runners
 gem 'acts-as-taggable-on', '~> 3.4'
@@ -31,11 +31,11 @@ gem 'settingslogic'
 gem "unicorn", "~> 4.8.2"
 
 # Haml
-gem 'haml-rails','~> 0.5.3'
+gem 'haml-rails', '~> 0.5.3'
 
 # Background jobs
 gem 'slim'
-gem 'sinatra', require: nil
+gem 'sinatra', '>= 2.0.0', require: nil
 gem 'sidekiq'
 
 # Scheduled
@@ -54,7 +54,7 @@ gem 'state_machine'
 gem 'httparty', '0.11.0'
 
 # OAuth
-gem 'oauth2', '1.0.0'
+gem 'oauth2', '1.1.0'
 
 # API
 gem 'grape'
@@ -77,15 +77,15 @@ gem 'attr_encrypted', '1.3.4'
 gem 'rake'
 gem 'foreman'
 gem 'request_store'
-gem 'jquery-rails', '~> 3.1.3'
+gem 'jquery-rails', '~> 4.0.1'
 gem 'gitlab_ci_meta', '~> 4.0'
 
-gem 'sass-rails',   '~> 4.0.5'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 5.0.5'
+gem 'coffee-rails', '~> 4.1.1'
 
 gem 'uglifier', '>= 1.0.3'
 gem 'bootstrap-sass', '~> 3.0'
-gem "font-awesome-rails", '~> 3.2'
+gem "font-awesome-rails", "~> 4.5", ">= 4.5.0.1"
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
@@ -117,12 +117,12 @@ group :development, :test do
 
   gem "database_cleaner", '~> 1.4.0'
   gem 'factory_girl_rails'
-  gem 'rspec-rails',      '~> 3.3.0'
+  gem 'rspec-rails', '~> 3.5.0'
   gem 'rubocop',          '0.28.0', require: false
 
-  gem 'capybara',            '~> 2.4.0'
-  gem 'capybara-screenshot', '~> 1.0.0'
-  gem 'poltergeist',         '~> 1.6.0'
+  gem 'capybara', '~> 2.4.4'
+  gem 'capybara-screenshot', '~> 1.0.11'
+  gem 'poltergeist', '~> 1.6.0'
 
   gem 'spring',                '~> 1.3.6'
   gem 'spring-commands-rspec', '~> 1.0.0'
