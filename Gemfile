@@ -8,7 +8,7 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem 'rails', '4.1.12'
+gem 'rails', '5.2.8.1'
 gem 'activerecord-deprecated_finders'
 gem 'activerecord-session_store'
 gem "nested_form"
