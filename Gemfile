@@ -18,7 +18,7 @@ gem "nested_form"
 gem 'sprockets', '~> 2.12.3'
 
 # tag runners
-gem 'acts-as-taggable-on', '~> 3.4'
+gem 'acts-as-taggable-on', '~> 3.4', '>= 3.4.3'
 
 # DB
 gem 'mysql2', group: :mysql
@@ -31,7 +31,7 @@ gem 'settingslogic'
 gem "unicorn", "~> 4.8.2"
 
 # Haml
-gem 'haml-rails','~> 0.5.3'
+gem 'haml-rails', '~> 0.5.3'
 
 # Background jobs
 gem 'slim'
@@ -62,7 +62,7 @@ gem 'grape-entity'
 gem 'virtus', '1.0.1'
 
 # Default values for AR models
-gem "default_value_for", "~> 3.0.0"
+gem "default_value_for", "~> 3.0.0", ">= 3.0.0.1"
 
 # Slack integration
 gem "slack-notifier", "~> 1.0.0"
@@ -80,18 +80,18 @@ gem 'request_store'
 gem 'jquery-rails', '~> 3.1.3'
 gem 'gitlab_ci_meta', '~> 4.0'
 
-gem 'sass-rails',   '~> 4.0.5'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.5'
+gem 'coffee-rails', '~> 4.0.1'
 
 gem 'uglifier', '>= 1.0.3'
 gem 'bootstrap-sass', '~> 3.0'
-gem "font-awesome-rails", '~> 3.2'
+gem "font-awesome-rails", "~> 3.2", ">= 3.2.1.3"
 gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 
 # Soft deletion
-gem "paranoia", "~> 2.0"
+gem "paranoia", "~> 2.1", ">= 2.1.1"
 
 # Colored output to console
 gem "colored"
@@ -117,7 +117,7 @@ group :development, :test do
 
   gem "database_cleaner", '~> 1.4.0'
   gem 'factory_girl_rails'
-  gem 'rspec-rails',      '~> 3.3.0'
+  gem 'rspec-rails', '~> 3.3.2'
   gem 'rubocop',          '0.28.0', require: false
 
   gem 'capybara',            '~> 2.4.0'
