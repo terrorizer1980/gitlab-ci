@@ -8,9 +8,9 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem 'rails', '4.1.12'
+gem 'rails', '5.2.8.1'
 gem 'activerecord-deprecated_finders'
-gem 'activerecord-session_store'
+gem 'activerecord-session_store', '>= 1.1.1'
 gem "nested_form"
 
 # Specify a sprockets version due to security issue
@@ -18,7 +18,7 @@ gem "nested_form"
 gem 'sprockets', '~> 2.12.3'
 
 # tag runners
-gem 'acts-as-taggable-on', '~> 3.4'
+gem 'acts-as-taggable-on', '~> 4.0', '>= 4.0.0'
 
 # DB
 gem 'mysql2', group: :mysql
@@ -62,7 +62,7 @@ gem 'grape-entity'
 gem 'virtus', '1.0.1'
 
 # Default values for AR models
-gem "default_value_for", "~> 3.0.0"
+gem "default_value_for", "~> 3.1.0"
 
 # Slack integration
 gem "slack-notifier", "~> 1.0.0"
@@ -91,7 +91,7 @@ gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 
 # Soft deletion
-gem "paranoia", "~> 2.0"
+gem "paranoia", "~> 2.4", ">= 2.4.1"
 
 # Colored output to console
 gem "colored"
