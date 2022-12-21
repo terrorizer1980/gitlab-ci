@@ -8,14 +8,14 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem 'rails', '4.1.12'
+gem 'rails', '4.2.0'
 gem 'activerecord-deprecated_finders'
 gem 'activerecord-session_store'
 gem "nested_form"
 
 # Specify a sprockets version due to security issue
 # See https://groups.google.com/forum/#!topic/rubyonrails-security/doAVp0YaTqY
-gem 'sprockets', '~> 2.12.3'
+gem 'sprockets', '~> 4.2.0'
 
 # tag runners
 gem 'acts-as-taggable-on', '~> 3.4'
@@ -80,7 +80,7 @@ gem 'request_store'
 gem 'jquery-rails', '~> 3.1.3'
 gem 'gitlab_ci_meta', '~> 4.0'
 
-gem 'sass-rails',   '~> 4.0.5'
+gem 'sass-rails', '~> 6.0.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 gem 'uglifier', '>= 1.0.3'
