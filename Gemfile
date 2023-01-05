@@ -51,7 +51,7 @@ gem 'kaminari'
 gem 'state_machine'
 
 # For API calls
-gem 'httparty', '0.11.0'
+gem 'httparty', '0.21.0'
 
 # OAuth
 gem 'oauth2', '1.0.0'
