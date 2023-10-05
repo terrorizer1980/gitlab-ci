@@ -8,9 +8,9 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem 'rails', '4.1.12'
+gem 'rails', '7.1.0'
 gem 'activerecord-deprecated_finders'
-gem 'activerecord-session_store'
+gem 'activerecord-session_store', '>= 1.1.1'
 gem "nested_form"
 
 # Specify a sprockets version due to security issue
@@ -31,7 +31,7 @@ gem 'settingslogic'
 gem "unicorn", "~> 4.8.2"
 
 # Haml
-gem 'haml-rails','~> 0.5.3'
+gem 'haml-rails', '~> 0.6.0'
 
 # Background jobs
 gem 'slim'
@@ -45,7 +45,7 @@ gem 'whenever', require: false
 gem 'stamp'
 
 # Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 0.15.1'
 
 # State machine
 gem 'state_machine'
@@ -77,17 +77,17 @@ gem 'attr_encrypted', '1.3.4'
 gem 'rake'
 gem 'foreman'
 gem 'request_store'
-gem 'jquery-rails', '~> 3.1.3'
+gem 'jquery-rails', '~> 4.0.1'
 gem 'gitlab_ci_meta', '~> 4.0'
 
-gem 'sass-rails',   '~> 4.0.5'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 5.0.8'
+gem 'coffee-rails', '~> 4.2.2'
 
 gem 'uglifier', '>= 1.0.3'
 gem 'bootstrap-sass', '~> 3.0'
-gem "font-awesome-rails", '~> 3.2'
-gem 'turbolinks'
-gem 'jquery-turbolinks'
+gem "font-awesome-rails", "~> 4.7", ">= 4.7.0.8"
+gem 'turbolinks', '>= 2.1.0'
+gem 'jquery-turbolinks', '>= 2.0.2'
 gem 'nprogress-rails'
 
 # Soft deletion
@@ -102,7 +102,7 @@ gem "unf"
 
 
 group :development do
-  gem 'brakeman', require: false
+  gem 'brakeman', '>= 3.3.0', require: false
   gem 'annotate'
   gem "letter_opener"
   gem 'quiet_assets'
@@ -116,8 +116,8 @@ group :development, :test do
   gem 'pry-rails'
 
   gem "database_cleaner", '~> 1.4.0'
-  gem 'factory_girl_rails'
-  gem 'rspec-rails',      '~> 3.3.0'
+  gem 'factory_girl_rails', '>= 4.4.0'
+  gem 'rspec-rails', '~> 3.5.0'
   gem 'rubocop',          '0.28.0', require: false
 
   gem 'capybara',            '~> 2.4.0'
