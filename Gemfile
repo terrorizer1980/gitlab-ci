@@ -45,7 +45,7 @@ gem 'whenever', require: false
 gem 'stamp'
 
 # Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 0.16.2'
 
 # State machine
 gem 'state_machine'
