@@ -97,7 +97,7 @@ gem "paranoia", "~> 2.0"
 gem "colored"
 
 # for aws storage
-gem "fog", "~> 1.25.0"
+gem "fog", "~> 1.26.0"
 gem "unf"
 
 
@@ -120,9 +120,9 @@ group :development, :test do
   gem 'rspec-rails',      '~> 3.3.0'
   gem 'rubocop',          '0.28.0', require: false
 
-  gem 'capybara',            '~> 2.4.0'
-  gem 'capybara-screenshot', '~> 1.0.0'
-  gem 'poltergeist',         '~> 1.6.0'
+  gem 'capybara', '~> 2.5.0'
+  gem 'capybara-screenshot', '~> 1.0.12'
+  gem 'poltergeist', '~> 1.7.0'
 
   gem 'spring',                '~> 1.3.6'
   gem 'spring-commands-rspec', '~> 1.0.0'
