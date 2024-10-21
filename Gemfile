@@ -8,7 +8,7 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem 'rails', '4.1.12'
+gem 'rails', '7.0.0'
 gem 'activerecord-deprecated_finders'
 gem 'activerecord-session_store'
 gem "nested_form"
@@ -45,7 +45,7 @@ gem 'whenever', require: false
 gem 'stamp'
 
 # Pagination
-gem 'kaminari'
+gem 'kaminari', '>= 1.0.0'
 
 # State machine
 gem 'state_machine'
@@ -80,13 +80,13 @@ gem 'request_store'
 gem 'jquery-rails', '~> 3.1.3'
 gem 'gitlab_ci_meta', '~> 4.0'
 
-gem 'sass-rails',   '~> 4.0.5'
+gem 'sass-rails', '~> 6.0.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 gem 'uglifier', '>= 1.0.3'
 gem 'bootstrap-sass', '~> 3.0'
 gem "font-awesome-rails", '~> 3.2'
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 gem 'jquery-turbolinks'
 gem 'nprogress-rails'
 
