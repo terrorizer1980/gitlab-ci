@@ -18,7 +18,7 @@ gem "nested_form"
 gem 'sprockets', '~> 2.12.3'
 
 # tag runners
-gem 'acts-as-taggable-on', '~> 3.4'
+gem 'acts-as-taggable-on', '~> 12.0', '>= 12.0.0'
 
 # DB
 gem 'mysql2', group: :mysql
