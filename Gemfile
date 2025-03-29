@@ -10,7 +10,7 @@ end
 
 gem 'rails', '4.1.12'
 gem 'activerecord-deprecated_finders'
-gem 'activerecord-session_store'
+gem 'activerecord-session_store', '>= 2.2.0'
 gem "nested_form"
 
 # Specify a sprockets version due to security issue
@@ -97,7 +97,7 @@ gem "paranoia", "~> 2.0"
 gem "colored"
 
 # for aws storage
-gem "fog", "~> 1.25.0"
+gem "fog", "~> 1.37.0"
 gem "unf"
 
 
