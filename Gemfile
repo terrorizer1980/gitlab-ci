@@ -57,7 +57,7 @@ gem 'httparty', '0.11.0'
 gem 'oauth2', '1.0.0'
 
 # API
-gem 'grape'
+gem 'grape', '>= 2.4.0'
 gem 'grape-entity'
 gem 'virtus', '1.0.1'
 
