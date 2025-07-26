@@ -8,9 +8,9 @@ def linux_only(require_as)
   RUBY_PLATFORM.include?('linux') && require_as
 end
 
-gem 'rails', '4.1.12'
+gem 'rails', '4.1.13'
 gem 'activerecord-deprecated_finders'
-gem 'activerecord-session_store'
+gem 'activerecord-session_store', '>= 0.1.1'
 gem "nested_form"
 
 # Specify a sprockets version due to security issue
@@ -31,7 +31,7 @@ gem 'settingslogic'
 gem "unicorn", "~> 4.8.2"
 
 # Haml
-gem 'haml-rails','~> 0.5.3'
+gem 'haml-rails', '~> 0.6.0'
 
 # Background jobs
 gem 'slim'
@@ -75,19 +75,19 @@ gem 'attr_encrypted', '1.3.4'
 
 # Other
 gem 'rake'
-gem 'foreman'
+gem 'foreman', '>= 0.64.0'
 gem 'request_store'
-gem 'jquery-rails', '~> 3.1.3'
+gem 'jquery-rails', '~> 3.1.4'
 gem 'gitlab_ci_meta', '~> 4.0'
 
-gem 'sass-rails',   '~> 4.0.5'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 5.0.0'
+gem 'coffee-rails', '~> 4.1.0'
 
 gem 'uglifier', '>= 1.0.3'
 gem 'bootstrap-sass', '~> 3.0'
-gem "font-awesome-rails", '~> 3.2'
-gem 'turbolinks'
-gem 'jquery-turbolinks'
+gem "font-awesome-rails", "~> 4.0", ">= 4.0.0.0"
+gem 'turbolinks', '>= 2.1.0'
+gem 'jquery-turbolinks', '>= 2.0.2'
 gem 'nprogress-rails'
 
 # Soft deletion
@@ -97,7 +97,7 @@ gem "paranoia", "~> 2.0"
 gem "colored"
 
 # for aws storage
-gem "fog", "~> 1.25.0"
+gem "fog", "~> 1.26.0"
 gem "unf"
 
 
@@ -105,7 +105,7 @@ group :development do
   gem 'brakeman', require: false
   gem 'annotate'
   gem "letter_opener"
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.0.3'
   gem 'rack-mini-profiler', require: false
 end
 
@@ -116,13 +116,13 @@ group :development, :test do
   gem 'pry-rails'
 
   gem "database_cleaner", '~> 1.4.0'
-  gem 'factory_girl_rails'
-  gem 'rspec-rails',      '~> 3.3.0'
+  gem 'factory_girl_rails', '>= 4.4.0'
+  gem 'rspec-rails', '~> 3.3.3'
   gem 'rubocop',          '0.28.0', require: false
 
-  gem 'capybara',            '~> 2.4.0'
-  gem 'capybara-screenshot', '~> 1.0.0'
-  gem 'poltergeist',         '~> 1.6.0'
+  gem 'capybara', '~> 2.5.0'
+  gem 'capybara-screenshot', '~> 1.0.12'
+  gem 'poltergeist', '~> 1.7.0'
 
   gem 'spring',                '~> 1.3.6'
   gem 'spring-commands-rspec', '~> 1.0.0'
@@ -130,7 +130,7 @@ group :development, :test do
   gem 'minitest'
   gem 'ffaker', '~> 2.0.0'
 
-  gem 'coveralls', '~> 0.8.2', require: false
+  gem 'coveralls', '~> 0.8.23', require: false
 end
 
 group :test do
