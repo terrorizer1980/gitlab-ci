@@ -51,7 +51,7 @@ gem 'kaminari'
 gem 'state_machine'
 
 # For API calls
-gem 'httparty', '0.11.0'
+gem 'httparty', '0.24.0'
 
 # OAuth
 gem 'oauth2', '1.0.0'
@@ -68,7 +68,7 @@ gem "default_value_for", "~> 3.0.0"
 gem "slack-notifier", "~> 1.0.0"
 
 # HipChat integration
-gem 'hipchat', '~> 1.5.0'
+gem 'hipchat', '~> 1.5.1'
 
 # Encrypt variables
 gem 'attr_encrypted', '1.3.4'
