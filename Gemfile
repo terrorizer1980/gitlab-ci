@@ -54,7 +54,7 @@ gem 'state_machine'
 gem 'httparty', '0.11.0'
 
 # OAuth
-gem 'oauth2', '1.0.0'
+gem 'oauth2', '1.4.8'
 
 # API
 gem 'grape'
